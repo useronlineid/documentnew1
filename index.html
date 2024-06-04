@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทำใบสั่งจ่าย</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ทำใบสั่งจ่าย</h1>
+        <form id="paymentForm">
+            <label for="referenceNumber">เลขที่อ้างอิงรายการ</label>
+            <input type="text" id="referenceNumber" placeholder="AMPim191" style="color:#e6e6e6">
+
+            <label for="recipientName">ชื่อผู้รับเงิน</label>
+            <input type="text" id="recipientName" placeholder="สนชมา กสนกา" style="color:#828282">
+
+            <label for="accountNumber">เลขที่บัญชีผู้รับเงิน</label>
+            <input type="text" id="accountNumber" placeholder="5502675802" style="color:#828282">
+
+            <label for="amount">จำนวนเงิน</label>
+            <input type="text" id="amount" placeholder="408,309.20 บาท" style="color:#828282">
+
+            <label for="transactionDate">วันที่ทำรายการ</label>
+            <input type="text" id="transactionDate" placeholder="30/05/2567 17:47:05" style="color:#828282">
+
+            <label for="notes">หมายเหตุ</label>
+            <textarea id="notes" style="color:red;">บัญชีของสมาชิกไม่ตรงกับข้อมูลในระบบ ธนาคารทำการโอนซ้ำหลายรอบ ไม่สามารถโอนเงินเข้าได้ ตามกฎระเบียบของธนาคาร กฎหมายความมั่นคงของกองทุนสมาชิก ถูกอายัดชั่วคราว</textarea>
+
+            <button type="button" id="saveImage">Save image</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
