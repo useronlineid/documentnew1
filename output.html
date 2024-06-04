@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output Image</title>
+    <link rel="stylesheet" href="styles-output.css">
+</head>
+<body>
+    <div id="capture">
+        <!-- รูปภาพและข้อความจะถูกเพิ่มเข้ามาที่นี่ -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script>
+        window.onload = function() {
+            html2canvas(document.getElementById('capture')).then(canvas => {
+                document.body.appendChild(canvas);
+                const link = document.createElement('a');
+                link.download = 'output.png';
+                link.href = canvas.toDataURL();
+                link.click();
+            });
+        };
+    </script>
+</body>
+</html>
