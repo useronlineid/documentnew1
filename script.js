@@ -1,4 +1,4 @@
-script.jsdocument.getElementById('saveImage').addEventListener('click', function() {
+document.getElementById('saveImage').addEventListener('click', function() {
     const referenceNumber = document.getElementById('referenceNumber').value || "AMPim191";
     const recipientName = document.getElementById('recipientName').value || "สนชมา กสนกา";
     const accountNumber = document.getElementById('accountNumber').value || "5502675802";
@@ -15,7 +15,7 @@ script.jsdocument.getElementById('saveImage').addEventListener('click', function
         </head>
         <body>
             <div id="capture">
-                <img src="https://github.com/useronlineid/documentnew/blob/main/png.png?raw=true" alt="Image">
+                <img src="https://github.com/useronlineid/documentnew1/blob/main/png.png?raw=true" alt="Image">
                 <p style="position: absolute; top: 145px; left: 490px; color:#828282; font-size: 18px;">${referenceNumber}</p>
                 <p style="position: absolute; top: 183px; left: 490px; color:#828282; font-size: 18px;">${recipientName}</p>
                 <p style="position: absolute; top: 220px; left: 490px; color:#828282; font-size: 18px;">${accountNumber}</p>
